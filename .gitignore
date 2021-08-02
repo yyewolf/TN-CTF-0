@@ -2,3 +2,4 @@
 *.bat
 config.go
 CTF0
+*.service
