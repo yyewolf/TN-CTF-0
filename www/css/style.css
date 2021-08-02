@@ -1,0 +1,78 @@
+.main-navbar {
+	background-color: #709294 !important;
+}
+
+.main-jumbo {
+	background-color: #91a5a4 !important;
+}
+
+.url-input {
+	background-color: #91a5a4 !important;
+}
+
+.input-box {
+	background-color: #cacaca !important;
+	border: 1px solid #4c4f53 !important;
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+.input-width {
+	width: -webkit-fill-available !important;
+}
+
+input {
+	color:white !important;
+}
+
+body {
+	background-color: #91a5a4 !important;
+	color: #ffffff !important;
+	height: 1080px;
+    position: relative;
+}
+
+.loader {
+	margin-top: 40px;
+	border-radius: 50%;
+	flex: 0 0 0% !important;
+	width: 80px !important;
+	height: 80px !important;
+	-webkit-animation: spin 1.5s infinite;
+	/* Safari */
+	animation: spin 1.5s infinite;
+}
+
+.card {
+	margin-top: 40px;
+}
+
+.center-all {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}

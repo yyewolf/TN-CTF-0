@@ -1,0 +1,4 @@
+package main
+
+// Hidden password for the database.
+var dbpswd = "STRING"
