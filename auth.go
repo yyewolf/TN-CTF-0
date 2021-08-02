@@ -97,7 +97,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// We secure passwords with bcrypt with salt (no pepper).
-	hash, err := bcrypt.GenerateFromPassword([]byte(passwd), bcrypt.MaxCost)
+	hash, err := bcrypt.GenerateFromPassword([]byte(passwd), bcrypt.MinCost)
 	if err != nil {
 		log.Println(err)
 	}
