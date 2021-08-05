@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -19,10 +20,12 @@ func init() {
 	// We connect to the correct database for this challenge.
 	var db *sql.DB
 	var err error
-	db, err = sql.Open("postgres", "dbname=ctf0 user=admin password="+dbpswd+" host=admin.rwbyadventures.com")
+	fmt.Println("Opening.")
+	db, err = sql.Open("postgres", "dbname=ctf0 user=postgres password="+dbpswd+" host=db port=5432 sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println("Opened.")
 
 	runner.MustPing(db)
 

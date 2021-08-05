@@ -66,6 +66,7 @@ func hostService() {
 	mux.Get("/", compressHandler(http.HandlerFunc(indexHandler)))
 
 	go srv.ListenAndServe()
+	fmt.Println("Running.")
 }
 
 func (u *User) formatConnected(data string) string {
